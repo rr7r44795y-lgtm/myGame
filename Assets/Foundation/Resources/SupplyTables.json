@@ -1,0 +1,295 @@
+{
+  "supplies": [
+    {
+      "id": "demo_food",
+      "name": "Food",
+      "desc": "Demo food: hunger +20",
+      "type": 0,
+      "value": 30,
+      "maxStack": 5,
+      "canGift": true
+    },
+    {
+      "id": "demo_water",
+      "name": "Water",
+      "desc": "Demo water: hydration +25",
+      "type": 1,
+      "value": 20,
+      "maxStack": 5,
+      "canGift": true
+    },
+    {
+      "id": "demo_gem",
+      "name": "Gem",
+      "desc": "Demo high-value supply",
+      "type": 2,
+      "value": 600,
+      "maxStack": 1,
+      "canGift": true
+    },
+    {
+      "id": "demo_flower",
+      "name": "Flower",
+      "desc": "Demo ordinary supply",
+      "type": 3,
+      "value": 100,
+      "maxStack": 5,
+      "canGift": true
+    },
+    {
+      "id": "demo_sour_food",
+      "name": "Sour food",
+      "desc": "Demo negative effect: hunger -15",
+      "type": 0,
+      "value": 10,
+      "maxStack": 5,
+      "canGift": false
+    }
+  ],
+  "foods": [
+    {
+      "id": "1",
+      "key": "demo_food",
+      "name": "Food",
+      "HPchange": 20,
+      "specialDesc": ""
+    },
+    {
+      "id": "5",
+      "key": "demo_sour_food",
+      "name": "Sour food",
+      "HPchange": -15,
+      "specialDesc": ""
+    }
+  ],
+  "waters": [
+    {
+      "id": "2",
+      "key": "demo_water",
+      "name": "Water",
+      "MPchange": 25,
+      "specialDesc": ""
+    }
+  ],
+  "highValues": [
+    {
+      "id": "3",
+      "key": "demo_gem",
+      "name": "Gem",
+      "specialDesc": ""
+    }
+  ],
+  "ordinary": [
+    {
+      "id": "4",
+      "key": "demo_flower",
+      "name": "Flower"
+    }
+  ],
+  "dropLocations": [
+    {
+      "id": "demo_point_0",
+      "name": "Demo point 0",
+      "type": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "number": 1,
+      "address": {
+        "x": -4.5,
+        "y": 0.35,
+        "z": 0
+      },
+      "chance": 1
+    },
+    {
+      "id": "demo_point_1",
+      "name": "Demo point 1",
+      "type": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "number": 1,
+      "address": {
+        "x": -1.5,
+        "y": 0.35,
+        "z": 0
+      },
+      "chance": 1
+    },
+    {
+      "id": "demo_point_2",
+      "name": "Demo point 2",
+      "type": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "number": 1,
+      "address": {
+        "x": 1.5,
+        "y": 0.35,
+        "z": 0
+      },
+      "chance": 1
+    },
+    {
+      "id": "demo_point_3",
+      "name": "Demo point 3",
+      "type": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "number": 1,
+      "address": {
+        "x": 4.5,
+        "y": 0.35,
+        "z": 0
+      },
+      "chance": 1
+    },
+    {
+      "id": "demo_point_4",
+      "name": "Demo point 4",
+      "type": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "number": 1,
+      "address": {
+        "x": -4.5,
+        "y": 0.35,
+        "z": 3
+      },
+      "chance": 1
+    },
+    {
+      "id": "demo_point_5",
+      "name": "Demo point 5",
+      "type": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "number": 1,
+      "address": {
+        "x": -1.5,
+        "y": 0.35,
+        "z": 3
+      },
+      "chance": 1
+    },
+    {
+      "id": "demo_point_6",
+      "name": "Demo point 6",
+      "type": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "number": 1,
+      "address": {
+        "x": 1.5,
+        "y": 0.35,
+        "z": 3
+      },
+      "chance": 1
+    },
+    {
+      "id": "demo_point_7",
+      "name": "Demo point 7",
+      "type": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "number": 1,
+      "address": {
+        "x": 4.5,
+        "y": 0.35,
+        "z": 3
+      },
+      "chance": 1
+    },
+    {
+      "id": "demo_point_8",
+      "name": "Demo point 8",
+      "type": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "number": 1,
+      "address": {
+        "x": -4.5,
+        "y": 0.35,
+        "z": 6
+      },
+      "chance": 1
+    },
+    {
+      "id": "demo_point_9",
+      "name": "Demo point 9",
+      "type": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "number": 1,
+      "address": {
+        "x": -1.5,
+        "y": 0.35,
+        "z": 6
+      },
+      "chance": 1
+    },
+    {
+      "id": "demo_point_10",
+      "name": "Demo point 10",
+      "type": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "number": 1,
+      "address": {
+        "x": 1.5,
+        "y": 0.35,
+        "z": 6
+      },
+      "chance": 1
+    },
+    {
+      "id": "demo_point_11",
+      "name": "Demo point 11",
+      "type": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "number": 1,
+      "address": {
+        "x": 4.5,
+        "y": 0.35,
+        "z": 6
+      },
+      "chance": 1
+    }
+  ]
+}
