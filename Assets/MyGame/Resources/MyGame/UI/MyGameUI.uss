@@ -1,0 +1,154 @@
+/* 芳心纵火犯 · 灰盒 UI 样式。没有 UI 美术前统一用深色半透明面板。 */
+
+.root { font-size: 22px; color: rgb(235, 235, 240); }
+.layer { position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
+.screen { position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
+.row { flex-direction: row; align-items: center; }
+
+/* ---------- 通用控件 ---------- */
+.btn {
+    background-color: rgba(60, 64, 80, 0.92);
+    border-width: 1px; border-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px; color: rgb(235, 235, 240);
+    padding: 8px 18px; margin: 4px; font-size: 22px; min-height: 44px;
+}
+.btn:hover { background-color: rgba(85, 90, 112, 0.95); }
+.btn:disabled { opacity: 0.4; }
+.btn-primary { background-color: rgba(214, 72, 96, 0.95); }
+.btn-primary:hover { background-color: rgba(236, 92, 116, 1); }
+.btn-danger { background-color: rgba(150, 50, 50, 0.9); }
+.btn-big { min-width: 320px; min-height: 64px; font-size: 28px; margin: 8px; }
+.btn-small { min-height: 32px; padding: 4px 10px; font-size: 18px; }
+.chip { min-height: 32px; padding: 2px 12px; font-size: 18px; border-radius: 16px; }
+.chip-on { background-color: rgba(214, 72, 96, 0.95); }
+.close-btn { min-width: 44px; padding: 4px; margin-left: auto; font-size: 26px; }
+
+.input { margin: 6px 4px; font-size: 22px; }
+.input > .unity-base-field__label { min-width: 120px; color: rgb(200, 200, 210); }
+.input > .unity-base-text-field__input { background-color: rgba(20, 22, 30, 0.9); color: rgb(240, 240, 245); min-height: 40px; border-radius: 6px; font-size: 22px; }
+
+.panel {
+    background-color: rgba(24, 26, 36, 0.88);
+    border-radius: 12px; border-width: 1px; border-color: rgba(255, 255, 255, 0.1);
+    padding: 14px; margin: 8px;
+}
+.panel-title { font-size: 24px; -unity-font-style: bold; margin: 4px 0 8px 0; }
+.hint { font-size: 17px; color: rgb(160, 162, 175); white-space: normal; margin: 4px; }
+.ok-text { color: rgb(120, 220, 140); }
+.dim-text { color: rgb(150, 150, 160); }
+
+/* ---------- 弹窗与提示 ---------- */
+.mask { position: absolute; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.6); align-items: center; justify-content: center; }
+.dialog { background-color: rgb(30, 32, 44); border-radius: 14px; padding: 24px; min-width: 520px; max-width: 900px; border-width: 1px; border-color: rgba(255, 255, 255, 0.12); }
+.dialog-wide { min-width: 680px; }
+.dialog-title { font-size: 28px; -unity-font-style: bold; margin-bottom: 12px; }
+.dialog-text { font-size: 24px; white-space: normal; margin-bottom: 16px; }
+.dialog-body > Label { white-space: normal; margin: 4px; }
+.dialog-buttons { justify-content: flex-end; margin-top: 16px; }
+.setting-row { margin: 6px 4px; }
+.setting-label { min-width: 120px; color: rgb(200, 200, 210); }
+
+.toast-layer { align-items: center; justify-content: flex-start; padding-top: 140px; }
+.toast { background-color: rgba(10, 10, 16, 0.85); padding: 10px 22px; border-radius: 20px; margin: 4px; font-size: 22px; }
+
+/* ---------- 开始页面 ---------- */
+.menu { align-items: center; justify-content: center; background-color: rgb(34, 24, 40); }
+.game-title { font-size: 96px; -unity-font-style: bold; color: rgb(255, 120, 150); margin-bottom: 40px; }
+.menu-stage { flex-direction: row; align-items: center; }
+.menu-buttons { align-items: center; margin: 0 60px; }
+.character-slot { width: 280px; height: 420px; border-radius: 16px; background-color: rgba(255, 255, 255, 0.06); border-width: 2px; border-color: rgba(255, 255, 255, 0.12); align-items: center; justify-content: center; }
+.placeholder-text { color: rgb(150, 150, 165); -unity-text-align: middle-center; white-space: normal; }
+
+/* ---------- 加入房间 ---------- */
+.join { background-color: rgb(28, 30, 42); padding: 30px; }
+.page-title { font-size: 40px; -unity-font-style: bold; margin-left: 20px; }
+.join-body { flex-grow: 1; align-items: flex-start; margin-top: 20px; }
+.join-left { width: 320px; }
+.join-middle { flex-grow: 1; margin: 0 20px; }
+.room-list-panel { width: 620px; height: 780px; }
+.room-list { flex-grow: 1; }
+.room-item { -unity-text-align: middle-left; min-height: 56px; }
+.refresh-btn { align-self: flex-end; }
+
+/* ---------- 游戏房间 ---------- */
+.room { background-color: rgb(30, 28, 40); }
+.room-top-left { position: absolute; left: 24px; top: 20px; }
+.room-info { position: absolute; top: 28px; left: 0; right: 0; -unity-text-align: middle-center; font-size: 26px; }
+.room-top-right { position: absolute; right: 24px; top: 20px; align-items: flex-end; }
+.avatar-btn { width: 64px; height: 64px; border-radius: 32px; margin-left: 20px; }
+.wide-btn { min-width: 180px; margin-top: 12px; }
+.player-list { position: absolute; left: 24px; top: 130px; width: 820px; height: 520px; }
+.player-scroll { flex-grow: 1; }
+.player-row { min-height: 48px; border-bottom-width: 1px; border-color: rgba(255, 255, 255, 0.06); }
+.player-header { color: rgb(160, 162, 175); font-size: 18px; min-height: 32px; }
+.col-name { width: 300px; }
+.col-ready { width: 120px; }
+.col-team { width: 110px; }
+.col-mic { width: 120px; }
+.col-kick { width: 100px; }
+.player-count { -unity-text-align: middle-right; margin-top: 6px; }
+
+.chat { position: absolute; left: 24px; bottom: 24px; width: 640px; }
+.chat-log { background-color: rgba(0, 0, 0, 0.45); border-radius: 8px; padding: 8px; height: 270px; justify-content: flex-end; overflow: hidden; }
+.chat-line { font-size: 19px; white-space: normal; margin: 2px 0; }
+.chat-input { opacity: 0.6; }
+.chat-input-active { opacity: 1; }
+
+/* ---------- 准备阶段 ---------- */
+.prep { background-color: rgb(20, 24, 34); }
+.prep-panel { min-width: 1100px; }
+.prep-head { justify-content: space-between; margin-bottom: 10px; }
+.prep-timer { font-size: 30px; color: rgb(255, 200, 90); }
+.item-grid { flex-wrap: wrap; margin-bottom: 12px; }
+.item-choice { width: 100px; height: 100px; padding: 6px; margin: 6px; flex-direction: column; align-items: center; justify-content: center; border-width: 3px; border-color: rgba(0, 0, 0, 0); border-radius: 50px; }
+.item-choice.selected { border-color: rgb(90, 230, 110); }
+.item-choice-icon { width: 44px; height: 44px; }
+.item-choice-name { font-size: 16px; }
+
+/* ---------- 局内 HUD ---------- */
+.item-icon { border-radius: 8px; width: 60px; height: 60px; }
+.click-catcher { position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
+.hud-top-left { position: absolute; left: 20px; top: 20px; align-items: flex-start; }
+.minimap { width: 240px; height: 240px; border-radius: 12px; overflow: hidden; border-width: 3px; border-color: rgba(255, 255, 255, 0.3); }
+.minimap-image { width: 100%; height: 100%; }
+.minimap-marker { position: absolute; left: 110px; top: 108px; width: 0; height: 0; border-left-width: 10px; border-right-width: 10px; border-bottom-width: 22px; border-left-color: rgba(0,0,0,0); border-right-color: rgba(0,0,0,0); border-bottom-color: rgb(255, 230, 80); }
+.match-col { margin-left: 15px; }
+.match-panel { width: 320px; height: 236px; padding: 6px; }
+.match-list { flex-grow: 1; }
+.match-row { min-height: 50px; }
+.match-row > .col-name { width: 220px; }
+.hud-timer { position: absolute; top: 18px; left: 0; right: 0; -unity-text-align: middle-center; font-size: 40px; -unity-font-style: bold; text-shadow: 2px 2px 2px rgba(0,0,0,0.8); }
+.hud-top-right { position: absolute; right: 20px; top: 20px; }
+.crosshair { position: absolute; left: 50%; top: 50%; width: 6px; height: 6px; margin-left: -3px; margin-top: -3px; border-radius: 3px; background-color: rgba(255, 255, 255, 0.85); }
+.prompt { position: absolute; left: 0; right: 0; top: 56%; -unity-text-align: middle-center; font-size: 24px; text-shadow: 2px 2px 2px rgba(0,0,0,0.9); }
+.hold-bar { position: absolute; left: 50%; top: 62%; width: 240px; margin-left: -120px; height: 12px; background-color: rgba(0,0,0,0.5); border-radius: 6px; overflow: hidden; }
+.hold-fill { height: 100%; background-color: rgb(120, 220, 140); }
+.ghost-banner { position: absolute; top: 90px; left: 0; right: 0; -unity-text-align: middle-center; font-size: 26px; color: rgb(200, 230, 255); }
+.hud-hint { position: absolute; bottom: 20px; left: 0; right: 0; -unity-text-align: middle-center; font-size: 18px; color: rgb(200, 200, 210); }
+.hud-bottom-left { position: absolute; left: 20px; bottom: 20px; align-items: flex-start; }
+.stats { background-color: rgba(0, 0, 0, 0.45); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; }
+.stat-row { margin: 3px 0; }
+.stat-name { width: 60px; font-size: 18px; }
+.stat-bar { width: 200px; height: 12px; background-color: rgba(255,255,255,0.15); border-radius: 6px; overflow: hidden; }
+.stat-fill { height: 100%; }
+.stat-value { width: 50px; font-size: 18px; -unity-text-align: middle-right; }
+.bag-btn { margin-bottom: 30px; }
+.quickbar { }
+.slot { background-color: rgba(20, 22, 30, 0.8); border-radius: 10px; border-width: 2px; border-color: rgba(255,255,255,0.15); margin: 4px; align-items: center; justify-content: center; }
+.slot.selected { border-color: rgb(255, 220, 90); }
+.quick-slot { width: 84px; height: 84px; }
+.slot-icon { width: 54px; height: 54px; }
+.slot-count { position: absolute; right: 6px; bottom: 2px; font-size: 18px; -unity-font-style: bold; }
+.slot-key { position: absolute; left: 6px; top: 2px; font-size: 16px; color: rgb(180, 180, 190); }
+.bag-panel { position: absolute; left: 50%; top: 50%; width: 860px; margin-left: -430px; margin-top: -330px; }
+.bag-head { margin-bottom: 8px; }
+.bag-grid { flex-wrap: wrap; }
+.bag-slot { width: 260px; height: 150px; flex-direction: column; padding: 6px; }
+.bag-slot-name { font-size: 20px; }
+.bag-slot-desc { font-size: 15px; color: rgb(170, 172, 185); white-space: normal; -unity-text-align: middle-center; }
+.info-panel { position: absolute; right: 20px; top: 90px; width: 420px; }
+.info-text { white-space: normal; font-size: 21px; }
+.tooltip { position: absolute; background-color: rgba(10, 10, 16, 0.92); padding: 8px 12px; border-radius: 8px; font-size: 18px; white-space: normal; max-width: 320px; }
+.drag-icon { position: absolute; opacity: 0.85; }
+.result { position: absolute; left: 50%; top: 35%; width: 900px; margin-left: -450px; -unity-text-align: middle-center; font-size: 34px; background-color: rgba(10, 10, 16, 0.85); padding: 30px; border-radius: 16px; white-space: normal; }
+.nameplate { position: absolute; width: 200px; -unity-text-align: middle-center; font-size: 20px; text-shadow: 2px 2px 2px rgba(0,0,0,0.9); }
