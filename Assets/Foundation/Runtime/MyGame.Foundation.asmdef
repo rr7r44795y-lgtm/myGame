@@ -1,0 +1,6 @@
+{
+  "name": "MyGame.Foundation",
+  "rootNamespace": "MyGame.Foundation",
+  "references": ["Unity.InputSystem", "UnityEngine.UI"],
+  "autoReferenced": true
+}
